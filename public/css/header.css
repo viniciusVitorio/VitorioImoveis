@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poppins&display=swap');
+
+.container-titulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+#titulo-logo{
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulos-links{
+  
+
+}
