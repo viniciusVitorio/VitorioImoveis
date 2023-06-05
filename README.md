@@ -1,5 +1,5 @@
-<h1>VitórioImoveis</h1>
-<p>VitórioImoveis é um projeto de listagem de imóveis, desenvolvido em Laravel.</p>
+<h1>Vitório Imoveis</h1>
+<p>O Vitório Imoveis é um projeto de listagem de imóveis, desenvolvido em Laravel.</p>
 
 <h2>🚀 Recursos do Projeto</h2>
 <ul>
