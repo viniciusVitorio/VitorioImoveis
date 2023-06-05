@@ -11,13 +11,13 @@
 
 <body>
   <header>
-    <div class="container-titulos">
-      <h1 id="titulo-logo">Vitório imóveis</h1>
+    <h1 id="titulo-logo">Vitório imóveis</h1>
+    <div class="header-links">
       <h3 class="titulo-link"><a href="/">Vendas</a></h3>
-      <h3 class="titulo-link"><a href="/">Adicionar imóvel</a></h3>
+      <h3 class="titulo-link"><a href="/imoveis/criar">Adicionar imóvel</a></h3>
     </div>
-    <a href="imoveis/criar">Adicionar imóvel</a>
   </header>
+  <div class="line"></div>
   {{$slot}}
 </body>
 
