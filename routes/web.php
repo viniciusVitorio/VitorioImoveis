@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/imoveis', [ImovelController::class, 'index']);
-
 Route::get('/imoveis/criar', [ImovelController::class, 'create']);
+Route::post('/imovel/salvar', [ImovelController::class, 'store']);

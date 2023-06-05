@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('imoveis', function (Blueprint $table) {
-            $table->id();
-            $table->string('nome', length: 128);
-            $table->string('preco', length: 12);
-            $table->timestamps();
+        Schema::table('imoveis', function (Blueprint $table) {
+            $table->decimal('preco', 12, 2);
         });
     }
 
@@ -24,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('imoveis');
+        Schema::table('imoveis', function (Blueprint $table) {
+            $table->dropColumn('preco');
+        });
     }
 };

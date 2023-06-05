@@ -1,10 +1,11 @@
 <x-layout title="Adicionar">
-  <form action="POST">
-    <label>Opção: </label>
-    <input type="text">
+  <form action="/imovel/salvar" method="POST">
+    @csrf
+    <label>Nome: </label>
+    <input name="nome" type="text">
 
     <label>Preço</label>
-    <input type="text">
+    <input name="preço" type="text">
 
     <input type="submit">
   </form>
