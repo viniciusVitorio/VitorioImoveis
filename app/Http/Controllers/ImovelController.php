@@ -27,10 +27,26 @@ class ImovelController extends Controller
         $nomeImovel = $request->input('nome');
         $precoImovel = $request->input('preço');
 
+        if ($request->hasFile('imagem')) {
+            $imagem = $request->file('imagem');
+            $caminhoImagem = $imagem->store('imagens', 'public');
+        } else {
+            $caminhoImagem = null;
+        }
+
         $Imoveis = new Imoveis();
         $Imoveis->nome = $nomeImovel;
         $Imoveis->preco = $precoImovel;
+        $Imoveis->imagem = $caminhoImagem;
         $Imoveis->save();
+
+        return redirect('/imoveis');
+    }
+
+    public function destroy($id)
+    {
+        $imovel = Imoveis::findOrFail($id);
+        $imovel->delete();
 
         return redirect('/imoveis');
     }
